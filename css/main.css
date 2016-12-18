@@ -1,28 +1,33 @@
 #title{
-  text-align: center;
-  font-family: monospace;
+  text-align:center;
+  font-family:monospace;
 }
-.textbox {
-  min-height: 150px;
+#textbox {
+  min-height:150px;
   -webkit-transition: box-shadow .25s;
   border: 2px solid #cfcfcf
 }
 .page-wrap {
   width: 85%;
   min-height: 100%;
-  font-family: "Trebuchet MS", Helvetica;
+  font-family:"Trebuchet MS", Helvetica;
   font-size: 12pt;
   margin: 50px auto;
 }
 .text {
-  font-family: "Trebuchet MS", Helvetica;
+  font-family:"Trebuchet MS", Helvetica;
   font-size: 12pt;
 }
 .passed {
   color:green;
+  font-weight:bold;
 }
 .failed {
   color:red;
+  font-weight:bold;
+}
+.sectiontitle {
+  font-size:15pt; 
 }
 #start{
   width: 25%;
@@ -31,5 +36,15 @@
   text-align: center;
 }
 html {
-  overflow-y: scroll;
+  overflow-y:scroll;
+}
+.results {
+  display: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: 15px;
+}
+.pitalics {
+  font-style:italic;
 }
