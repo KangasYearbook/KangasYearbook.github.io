@@ -6,6 +6,23 @@
         <meta name="description" content="Checks complicity with the yearbook style guide">
     </head>
     <body>
-        <h1 id="title"> Yearbook Style Guide </h1>
+        <div class = "page-wrap">
+            <h1 id = "title">
+                Yearbook Style Guide
+            </h1>
+            <p>
+                Copy and paste your writing into the text box below, select whether
+                it is a caption or a body copy, and then press the button to start
+            </p>
+            <p>
+                <input type = "radio" name = "type" value = "body copy" id = "bc"     checked>
+                <label for = "bc">body copy</label>
+                <input type = "radio" name = "type" value = "caption" id =       "caption">
+                <label for = "caption">caption</label>
+            </p>
+            <div class = "textbox" contenteditable = true>
+            </div>
+            <button id = "start" class = page-wrap onclick = "checkStyleGuide"> Start </button>
+        </div>
     </body>
 </html>
