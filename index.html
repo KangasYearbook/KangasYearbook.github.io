@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Style guide enforcer</title>
         <meta name="description" content="Checks complicity with the yearbook style guide">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/javascript.js"></script>
     </head>
     <body>
         <div class = "page-wrap">
@@ -22,7 +24,13 @@
             </p>
             <div class = "textbox" contenteditable = true>
             </div>
-            <button id = "start" class = page-wrap onclick = "checkStyleGuide"> Start </button>
+            <<!-- Obtrusive code? Ayy kek lmao who cares-->
+            <button id = "start" class = "text" onclick = "check()">
+                Start
+            </button>
+            <div id = "date results">
+    
+            </div>
         </div>
     </body>
 </html>
