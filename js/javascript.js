@@ -1,5 +1,24 @@
 var caption;
 var text;
+var namedata;
+var names;
+var nicknames;
+
+// Load names as soon as ready
+document.onload = loadNames;
+
+function loadNames () {
+  var xmlhttp;
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      namedata = this.responseText;
+      alert(namedata);
+    }
+  };
+  xmlhttp.open("GET", "names.csv", true);
+  xmlhttp.send();
+}
 
 function check () {
 	text = document.getElementById ("textbox").innerHTML;
@@ -48,6 +67,8 @@ function checkPeople () {
   pass ("I'm still working on this one", output);
   
   // 2.
+  writeP (output, "2) On first refernce, italicize full name. All future references should be just FIRST name and not italics.");
+  
 }
 
 function writeSectionTitle (output, title) {
