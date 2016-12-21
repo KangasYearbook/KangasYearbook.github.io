@@ -5,7 +5,7 @@ var names;
 var nicknames;
 
 // Load names as soon as ready
-document.onload = loadNames;
+window.onload = loadNames;
 
 function loadNames () {
   var xmlhttp;
